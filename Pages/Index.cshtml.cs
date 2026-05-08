@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using LensAndLight.Models; // Adjust this to match your namespace
+using LensAndLight; // Adjust this to match your namespace
 
 public class IndexModel : PageModel
 {

@@ -4,76 +4,74 @@
     ViewData["Title"] = "Photography Packages";
 }
 
-<div class="container mt-4">
-    <h2 class="mb-4 text-center">Photography Packages</h2>
+@* Custom Styles for the 'Cutesy' Vibe *@
+<style>
+    body { background-color: #fffafb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .page-title { color: #ff8fa3; font-weight: bold; margin-bottom: 30px; }
+    .cute-card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s;
+        overflow: hidden;
+    }
+    .cute-card:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(255,182,193,0.3); }
+    .btn-cute-primary { background-color: #ffb6c1; border: none; color: white; border-radius: 20px; }
+    .btn-cute-primary:hover { background-color: #ff9aa2; color: white; }
+    .search-bar { border-radius: 25px; border: 2px solid #ffdae0; }
+</style>
 
-    @* SEARCH BAR *@
-    <form asp-page="./Index" method="get" class="mb-4">
-        <div class="input-group">
+<div class="container mt-4">
+    <h1 class="text-center page-title">✨ Lens & Light Magic ✨</h1>
+
+    @* SEARCH SECTION *@
+    <form asp-page="./Index" method="get" class="mb-5">
+        <div class="input-group shadow-sm" style="max-width: 600px; margin: 0 auto;">
             <input type="text" name="SearchString" value="@Model.CurrentFilter" 
-                   class="form-control" placeholder="Search by package title...">
-            <button class="btn btn-dark" type="submit">Search</button>
-            <a asp-page="./Index" class="btn btn-outline-secondary">Clear</a>
+                   class="form-control search-bar px-4" placeholder="Find your sparkle...">
+            <button class="btn btn-cute-primary px-4" type="submit">Search</button>
+            <a asp-page="./Index" class="btn btn-outline-secondary rounded-end-pill px-3">Clear</a>
         </div>
     </form>
 
-    @* DATA TABLE *@
-    <table class="table table-hover shadow-sm">
-        <thead class="table-dark">
-            <tr>
-                <th>
-                    <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort" class="text-white text-decoration-none">
-                        Package Name @(Model.CurrentSort == "" ? "▲" : "▼")
-                    </a>
-                </th>
-                <th>
-                    <a asp-page="./Index" asp-route-sortOrder="@Model.PriceSort" class="text-white text-decoration-none">
-                        Price @(Model.CurrentSort == "Price" ? "▲" : "▼")
-                    </a>
-                </th>
-                <th>Category</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Products)
-            {
-                <tr>
-                    <td class="fw-bold">@item.Title</td>
-                    <td>@item.Price.ToString("C")</td>
-                    <td>@item.Category?.Name</td>
-                    <td>
-                        <a asp-page="./Edit" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-primary">Edit</a>
-                        <a asp-page="./Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-info">Details</a>
-                        <a asp-page="./Delete" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-danger">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    @* CARD GRID *@
+    <div class="row">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 cute-card shadow-sm">
+                    @* Image Section *@
+                    <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "/images/placeholder.jpg" : item.ImageUrl)" 
+                         class="card-img-top" alt="@item.Title" style="height: 220px; object-fit: cover;">
+                    
+                    <div class="card-body text-center d-flex flex-column">
+                        <span class="badge rounded-pill bg-light text-muted mb-2 shadow-sm" style="width: fit-content; margin: 0 auto;">@item.Category?.Name</span>
+                        <h5 class="card-title fw-bold" style="color: #ff758c;">@item.Title</h5>
+                        <p class="card-text text-muted small px-2">@item.Description</p>
+                        <h6 class="text-dark fw-bold mt-auto mb-3">@item.Price.ToString("C")</h6>
+                        
+                        <div class="d-flex justify-content-center gap-2 border-top pt-3">
+                            <a asp-page="/Products/Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-info rounded-pill">View</a>
+                            <a asp-page="/Products/Edit" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-warning rounded-pill">Edit</a>
+                            <a asp-page="/Products/Delete" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-danger rounded-pill">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 
-    @* PAGING CONTROLS *@
-    @{
-        var prevDisabled = !Model.Products.HasPreviousPage ? "disabled" : "";
-        var nextDisabled = !Model.Products.HasNextPage ? "disabled" : "";
-    }
-
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            <li class="page-item @prevDisabled">
-                <a asp-page="./Index" 
-                   asp-route-sortOrder="@Model.CurrentSort" 
-                   asp-route-pageIndex="@(Model.Products.PageIndex - 1)" 
-                   asp-route-searchString="@Model.CurrentFilter" 
-                   class="page-item btn btn-outline-dark me-2">Previous</a>
-            </li>
-            <li class="page-item @nextDisabled">
-                <a asp-page="./Index" 
-                   asp-route-sortOrder="@Model.CurrentSort" 
-                   asp-route-pageIndex="@(Model.Products.PageIndex + 1)" 
-                   asp-route-searchString="@Model.CurrentFilter" 
-                   class="page-item btn btn-outline-dark">Next</a>
-            </li>
-        </ul>
-    </nav>
+    @* PAGING BUTTONS *@
+    <div class="d-flex justify-content-center mt-5">
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @(!Model.Products.HasPreviousPage ? "disabled" : "")">
+                    <a asp-page="./Index" asp-route-pageIndex="@(Model.Products.PageIndex - 1)" class="page-link rounded-start-pill px-4">Prev</a>
+                </li>
+                <li class="page-item disabled"><span class="page-link px-4">Page @Model.Products.PageIndex</span></li>
+                <li class="page-item @(!Model.Products.HasNextPage ? "disabled" : "")">
+                    <a asp-page="./Index" asp-route-pageIndex="@(Model.Products.PageIndex + 1)" class="page-link rounded-end-pill px-4">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </div>
