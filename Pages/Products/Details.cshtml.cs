@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using LensAndLight;
 
-namespace LensAndLight.Pages.Products // The "Last Name" for this file
+namespace LensAndLight.Pages.Products 
 {
     public class DetailsModel : PageModel
     {

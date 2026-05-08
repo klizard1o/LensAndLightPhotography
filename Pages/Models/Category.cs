@@ -9,6 +9,6 @@ public class Category
     
     public string? Description { get; set; }
     
-    // Navigation property
+   
     public ICollection<Product> Products { get; set; } = new List<Product>();
 }

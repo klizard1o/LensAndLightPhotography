@@ -16,7 +16,7 @@ public class Product
     public string? ImageUrl { get; set; }
 
     [Required]
-    public int CategoryID { get; set; } // Foreign Key
+    public int CategoryID { get; set; } 
     
-    public Category? Category { get; set; } // Navigation property
+    public Category? Category { get; set; } 
 }

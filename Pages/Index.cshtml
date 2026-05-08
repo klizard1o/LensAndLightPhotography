@@ -4,7 +4,7 @@
     ViewData["Title"] = "Photography Packages";
 }
 
-@* Custom Styles for the 'Cutesy' Vibe *@
+@*  *@
 <style>
     body { background-color: #fffafb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     .page-title { color: #ff8fa3; font-weight: bold; margin-bottom: 30px; }
@@ -23,7 +23,7 @@
 <div class="container mt-4">
     <h1 class="text-center page-title">✨ Lens & Light Magic ✨</h1>
 
-    @* SEARCH SECTION *@
+    @*  *@
     <form asp-page="./Index" method="get" class="mb-5">
         <div class="input-group shadow-sm" style="max-width: 600px; margin: 0 auto;">
             <input type="text" name="SearchString" value="@Model.CurrentFilter" 
@@ -33,13 +33,13 @@
         </div>
     </form>
 
-    @* CARD GRID *@
+    @* *@
     <div class="row">
         @foreach (var item in Model.Products)
         {
             <div class="col-md-4 mb-4">
                 <div class="card h-100 cute-card shadow-sm">
-                    @* Image Section *@
+                    @*  *@
                     <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "/images/placeholder.jpg" : item.ImageUrl)" 
                          class="card-img-top" alt="@item.Title" style="height: 220px; object-fit: cover;">
                     
@@ -60,7 +60,7 @@
         }
     </div>
 
-    @* PAGING BUTTONS *@
+    @*  *@
     <div class="d-flex justify-content-center mt-5">
         <nav>
             <ul class="pagination">

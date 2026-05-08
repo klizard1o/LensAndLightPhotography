@@ -9,7 +9,7 @@ public class PhotographyContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // 1. Seed Categories with specific IDs
+        
         modelBuilder.Entity<Category>().HasData(
             new Category { CategoryID = 1, Name = "Weddings", Description = "Capturing your 'I Do' moments forever." },
             new Category { CategoryID = 2, Name = "Graduation", Description = "Celebrate your hard-earned milestone." },
@@ -18,13 +18,13 @@ public class PhotographyContext : DbContext
             new Category { CategoryID = 5, Name = "Newborn", Description = "Sweet, tiny memories for new parents." }
         );
 
-        // 2. Seed 30 Products for Paging using your specific themes
+        
         for (int i = 1; i <= 30; i++)
         {
             string title, desc, img;
             int catId;
 
-            // This logic cycles through your themes so the data is diverse
+          
             if (i <= 6) { 
                 title = $"Elegant Wedding Vol {i}"; 
                 desc = "Full day coverage with a romantic, airy edit.";
@@ -61,10 +61,10 @@ public class PhotographyContext : DbContext
                 {
                     ProductID = i,
                     Title = title,
-                    Price = 150.00M + (i * 10), // Varies the price slightly
+                    Price = 150.00M + (i * 10), 
                     CategoryID = catId,
                     Description = desc,
-                    ImageUrl = img // Ensure this property exists in your Product.cs model!
+                    ImageUrl = img 
                 }
             );
         }

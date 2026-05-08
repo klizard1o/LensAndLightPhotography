@@ -209,8 +209,6 @@
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/hfrtta2e3e-{0}-muycvpuwrr-muycvpuwrr.gz
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/azqs1l9j9l-{0}-87fc7y1x7t-87fc7y1x7t.gz
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/3gigp8uqxk-{0}-jfsiqqwiad-jfsiqqwiad.gz
-/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/82sy098sw6-{0}-7wfy61b6td-7wfy61b6td.gz
-/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/3izubx4cel-{0}-7wfy61b6td-7wfy61b6td.gz
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/staticwebassets.build.json
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/staticwebassets.development.json
@@ -366,3 +364,5 @@
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/82sy098sw6-{0}-4ckzjxbqgy-4ckzjxbqgy.gz
+/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/obj/Debug/net10.0/compressed/3izubx4cel-{0}-4ckzjxbqgy-4ckzjxbqgy.gz
