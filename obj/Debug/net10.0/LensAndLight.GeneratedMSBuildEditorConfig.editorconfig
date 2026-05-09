@@ -30,6 +30,46 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvUHJvZHVjdHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvUHJvZHVjdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvUHJvZHVjdHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/Pages/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -69,6 +109,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/LensAndLightPhotography/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TGVuc0FuZExpZ2h0UGhvdG9ncmFwaHkvUGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qcptgo5duw
 
 [/Users/kimberlyy/Downloads/CIDM 3312/LensAndLight/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
